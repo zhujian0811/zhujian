@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="plugins/morris/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+     <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+     <link rel="stylesheet" href="http://www.swiper.com.cn/dist/css/swiper.min.css">
+      <link rel="stylesheet" href="css/style1.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+       
+          <span class="logo-lg"><b>欢迎你：***</b></span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+        
+      
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">0</span>
+                </a>
+              
+              </li>
+              <!-- Notifications: style can be found in dropdown.less -->
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">0</span>
+                </a>
+               
+              </li>
+              <!-- Tasks: style can be found in dropdown.less -->
+              <li class="dropdown tasks-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">0</span>
+                </a>
+                
+              </li>
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Alexander Pierce</span>
+                </a>
+                
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+             
+
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">  <!-- 头像 -->
+            </div>
+            <div class="pull-left info">
+              <p>竺健</p>
+              <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+            </div>
+          </div>
+         
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            
+            <li class="active treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>店铺管理</span> 
+              </a>
+              
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>任务管理</span>
+               
+              </a>
+            </li>
+            <li>
+              <a href="pages/widgets.html">
+                <i class="fa fa-th"></i> <span>个人中心</span> 
+              </a>
+            </li>
+            
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+        <div class="content-wrapper">
+            <div class="row title">
+                <div class="col-md-4">
+                    <h1>店铺列表</h1>
+                    <a href="javascript:void(0);" class="addTask">
+                    <button class="btn btn-block btn-danger">+新增店铺</button>
+                </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-box">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input type="text" placeholder="输入店铺名称搜索"/><btn class="btn btn-default serch">搜索</btn>
+                </div>
+                </div>
+            </div>
+            <div class="row shoplist">
+                <div class="col-md-9">
+                    <ul class="clear_all col-md-10 col-md-offset-1">
+                        <li class="col-md-5  col-md-offset-1">
+                            <div class="shopitem">
+                                <a href="#"><h3>店铺名称****</h3>
+                                <h4>S00102</h4></a>
+                                <a href="#"><p>集中拍摄任务<i class="shopicon icon1">31</i></p></a>
+                                <a href="#"><p>散模拍摄任务<i class="shopicon icon2">5</i></p></a>
+                                <a href="#"><p>店铺信息管理</p></a>
+                            </div>
+                        </li>
+                        <li class="col-md-5  col-md-offset-1">
+                            <div class="shopitem">
+                                <a href="#"><h3>店铺名称****</h3>
+                                <h4>S00102</h4></a>
+                                <a href="#"><p>集中拍摄任务<i class="shopicon icon1">31</i></p></a>
+                                <a href="#"><p>散模拍摄任务<i class="shopicon icon2">5</i></p></a>
+                                <a href="#"><p>店铺信息管理</p></a>
+                            </div>
+                        </li>
+                        <li class="col-md-5  col-md-offset-1">
+                            <div class="shopitem">
+                                <a href="#"><h3>店铺名称****</h3>
+                                <h4>S00102</h4></a>
+                                <a href="#"><p>集中拍摄任务<i class="shopicon icon1">31</i></p></a>
+                                <a href="#"><p>散模拍摄任务<i class="shopicon icon2">5</i></p></a>
+                                <a href="#"><p>店铺信息管理</p></a>
+                            </div>
+                        </li>
+                        <li class="col-md-5  col-md-offset-1">
+                            <div class="shopitem">
+                                <a href="#"><h3>店铺名称****</h3>
+                                <h4>S00102</h4></a>
+                                <a href="#"><p>集中拍摄任务<i class="shopicon icon1">31</i></p></a>
+                                <a href="#"><p>散模拍摄任务<i class="shopicon icon2">5</i></p></a>
+                                <a href="#"><p>店铺信息管理</p></a>
+                            </div>
+                        </li>              
+                    </ul>
+                </div>
+                <div class="col-md-3 helpcenter">
+                    <h1>帮助中心</h1>
+                    <p><a href="#">什么事集中拍摄任务？</a></p>
+                    <p><a href="#">什么事散模任务？</a></p>
+                    <p><a href="#">我可以用全名红人做什么？</a></p>
+                </div>
+            </div>
+            
+        </div>
+        
+      </div>
+ 
+<!--      新建店铺-->
+      <div class="fc-box">
+      <div class="addshop-modal">
+          <div class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">新增店铺</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">店铺名称</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputtext1" placeholder="店铺名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">店铺链接</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputtext1" placeholder="店铺链接">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">店铺方对接人</label>
+                            <div class="col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">我自己
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">对接人称谓(必填)</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputtext1" placeholder="对接人称谓">
+                            </div> 
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">手机(必填)</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputtext1" placeholder="手机">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">旺旺</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputtext1" placeholder="旺旺">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">QQ</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputtext1" placeholder="QQ">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputtext1" class="col-sm-3 control-label">备注</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" rows="3" placeholder="备注 ..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">新建</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+      </div>
+      </div>
+      
+      
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- DataTables -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="plugins/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <script src="http://www.swiper.com.cn/dist/js/swiper.min.js"></script>
+     <script src="js/index.js"></script>
+    
+  </body>
+</html>
